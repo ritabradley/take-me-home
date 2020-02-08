@@ -9,37 +9,6 @@
     </head>
     <body>
         <div id="root"></div>
-        <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-        <script>
-            const Pet = props => {
-                return React.createElement('div', {}, [
-                    React.createElement('h1', {}, props.name),
-                    React.createElement('h2', {}, props.animal),
-                    React.createElement('h2', {}, props.breed)
-                ]);
-            };
-            const App = () => {
-                return React.createElement('div', {}, [
-                    React.createElement('h1', {}, 'Adopt Me!'),
-                    React.createElement(Pet, {
-                        name: 'Luna',
-                        animal: 'Dog',
-                        breed: 'Havanese'
-                    }),
-                    React.createElement(Pet, {
-                        name: 'Pepper',
-                        animal: 'Bird',
-                        breed: 'Cockatiel'
-                    }),
-                    React.createElement(Pet, {
-                        name: 'Doink',
-                        animal: 'Cat',
-                        breed: 'Mix'
-                    })
-                ]);
-            };
-            ReactDOM.render(React.createElement(App), document.getElementById('root'));
-        </script>
+        <script src="App.js"></script>
     </body>
 </html>
